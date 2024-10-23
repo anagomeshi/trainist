@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trainist</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="app-chrome">
+    <div class="app-header">
+      <div class="header-left">
+        <div class="set-button">
+          <img src="icons/timer.svg" alt="" draggable="false">
+        </div>
+      </div>
+      <div class="header-center">セット１</div>
+      <div class="header-right">
+        <div class="setting-button">
+          <img src="icons/gear.svg" alt="" draggable="false">
+        </div>
+      </div>
+    </div>
+    <div class="app-content">
+      <div class="timer-container">
+        <svg class="timer-svg" viewBox="0 0 100 100">
+          <circle class="timer-background" cx="50" cy="50" r="48" stroke="#90cbf9" fill="none"></circle>
+          <circle class="timer-bar" cx="50" cy="50" r="48" stroke="#2196f3" fill="none"></circle>
+        </svg>
+        <div class="timer-time">60</div>
+      </div>
+      <div class="timer-controller">
+        <div class="cancel-button"></div>
+        <div class="stop-button">
+          <svg width="35pt" height="35pt" fill="#2196f3" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+        </div>
+        <div class="restart-button"></div>
+      </div>
+      <div class="schedule-container">
+        <table class="schedule">
+          <tr>
+            <td style='text-align: center;'>月</td>
+            <td>休み</td>
+          </tr>
+          <tr>
+            <td style='text-align: center;'>火</td>
+            <td>プッシュアップ：10～15回×3セット<br>スクワット：10～15回×3セット<br>プランク：30秒×3セット</td>
+          </tr>
+          <tr>
+            <td style='text-align: center;'>水</td>
+            <td>休み</td>
+          </tr>
+          <tr>
+            <td style='text-align: center;'>木</td>
+            <td>ナロープッシュアップ：10～15回×3セット<br>インバーデットロウ：10回×3セット<br>クランチ：10～15回×3セット</td>
+          </tr>
+          <tr>
+            <td style='text-align: center;'>金</td>
+            <td>プッシュアップ：10～15回×3セット<br>スクワット：10～15回×3セット<br>プランク：30秒×3セット</td>
+          </tr>
+          <tr>
+            <td style='text-align: center;'>土</td>
+            <td>休み</td>
+          </tr>
+          <tr>
+            <td style='text-align: center;'>日</td>
+            <td>ナロープッシュアップ：10～15回×3セット<br>インバーデットロウ：10回×3セット<br>クランチ：10～15回×3セット</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

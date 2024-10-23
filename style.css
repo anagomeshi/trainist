@@ -1,0 +1,215 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* クロム */
+.app-chrome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* アプリヘッダー */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 44pt;
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-grow: 2;
+  order: 0;
+  min-width: min-content;
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  max-width: fit-content;
+  min-width: 0;
+  width: 60%;
+  height: 100%;;
+  color: #000000;
+  font-size: 14pt;
+  box-sizing: border-box;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 2;
+  order: 2;
+  min-width: min-content;
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.set-button, .setting-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44pt;
+  height: 44pt;
+  box-sizing: border-box;
+}
+
+.set-button img{
+  width: 24pt;
+  height: 24pt;
+}
+
+/* コンテンツ */
+.app-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/* タイマーコンテイナー */
+.timer-container {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  order: 0;
+  width: 100%;
+  height: auto;
+  padding: 12pt 24pt;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.timer-svg {
+  transform: rotate(-90deg);
+  z-index: 1;
+  -webkit-transform: rotate(-90deg);
+  circle{
+    stroke-width: 3;
+  }
+}
+
+.timer-bar {
+  stroke-linecap: round;
+  stroke-dasharray: 301.59; 
+  stroke-dashoffset: 0;
+  transition: all 1s linear;
+}
+
+.timer-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 65pt;
+  line-height: 1;
+  z-index: 2;
+}
+
+/* タイマーコントローラー */
+.timer-controller{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex: 0 0 auto;
+  order: 1;
+  gap: 24pt;
+  width: 100%;
+  height: auto;
+  padding: 12pt;
+  box-sizing: border-box;
+}
+
+.cancel-button, .restart-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 50pt;
+  height: 50pt;
+  border: 1pt solid #e0e0e0;
+  border-radius: 25pt;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.stop-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 70pt;
+  height: 70pt;
+  border: 1px solid #2196f3;
+  border-radius: 35pt;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+/* スケジュール */
+.schedule-container{
+  display: flex;
+  flex: 0 0 auto;
+  order: 2;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 12pt;
+  box-sizing: border-box;
+}
+
+.schedule{
+  width: 100%;
+  height: auto;
+  line-height: 1.875;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.schedule td{
+  padding: 0.5rem;
+  border: 1px solid #202020;
+}
