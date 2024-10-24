@@ -106,9 +106,6 @@ body {
 /* タイマーコンテイナー */
 .timer-container {
   position: relative;
-  display: flex;
-  flex: 0 0 auto;
-  order: 0;
   width: 100%;
   height: auto;
   padding: 12pt 24pt;
@@ -152,8 +149,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex: 0 0 auto;
-  order: 1;
   gap: 24pt;
   width: 100%;
   height: auto;
@@ -189,9 +184,6 @@ body {
 
 /* スケジュール */
 .schedule-container{
-  display: flex;
-  flex: 0 0 auto;
-  order: 2;
   width: 100%;
   height: auto;
   overflow: hidden;
