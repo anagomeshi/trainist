@@ -77,6 +77,16 @@ html,body {
   box-sizing: border-box;
 }
 
+/* 今日のメニュー */
+.today-menu-label{
+  margin: 16px 0;
+  text-align: center;
+  color: #202020;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
 /* タイマーコンテイナー */
 .timer-container {
   position: relative;
@@ -122,11 +132,9 @@ html,body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 32px;
   width: 100%;
   height: auto;
-  padding: 16px;
+  padding: 32px;
   box-sizing: border-box;
 }
 
@@ -143,6 +151,7 @@ html,body {
   border-radius: 48px;
   color: #738cf3;
   font-size: 1.25rem;
+  line-height: 1.5;
   box-sizing: border-box;
 }
 
