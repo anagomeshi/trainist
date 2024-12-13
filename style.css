@@ -35,9 +35,6 @@ html,body {
 
 /* アプリヘッダー */
 .app-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex: 0 0 auto;
   width: 100%;
   height: 32px;
@@ -45,8 +42,36 @@ html,body {
   box-sizing: border-box;
 }
 
-.app-header img{
+.header{
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header-show{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.header img{
+  width: 100%;
 }
 
 .header-left{
@@ -67,14 +92,29 @@ html,body {
 
 /* コンテンツ */
 .app-content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   flex: 1 0 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content{
+  display: none;
   width: 100%;
   height: 100%;
   overflow: auto;
   box-sizing: border-box;
+}
+
+.content-timer.content-show{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-schedule.content-show{
+  display: block;
 }
 
 /* 今日のメニュー */
@@ -102,7 +142,7 @@ html,body {
   z-index: 1;
   -webkit-transform: rotate(-90deg);
   circle{
-    stroke-width: 2;
+    stroke-width: 2.5;
   }
 }
 
@@ -124,7 +164,6 @@ html,body {
   height: 100%;
   font-size: 4.5rem;
   line-height: 1;
-  z-index: 2;
 }
 
 /* タイマーコントローラー */
