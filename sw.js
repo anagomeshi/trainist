@@ -1,4 +1,4 @@
-var CACHE_NAME = 'trainist-v1.3';
+var CACHE_NAME = 'trainist-v1.4';
 var urlsToCache = [
     'icon/gear.svg',
     'icon/schedule.png',
